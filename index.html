@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Speak Master</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>Speak Master</h1>
+      <p>Голосовой ИИ для работы с конфликтами</p>
+    </header>
+
+    <section class="card">
+      <h2>Результаты тестирования</h2>
+      <div class="test-grid">
+        <div class="emotion"><strong>4.3</strong><span>Гнев</span></div>
+        <div class="emotion"><strong>2.4</strong><span>Обида</span></div>
+        <div class="emotion"><strong>2</strong><span>Страх</span></div>
+        <div class="emotion"><strong>6</strong><span>Уверенность</span></div>
+        <div class="emotion"><strong>8</strong><span>Эмпатия</span></div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Выбор направления</h2>
+      <div class="path">
+        <button>Интеллигентность</button>
+        <button class="aggressive">Агрессивность</button>
+      </div>
+    </section>
+
+    <section class="card assistant">
+      <h2>ИИ помощник</h2>
+      <p class="muted">Нажмите и начните диалог</p>
+      <button class="mic" id="openChat">💬</button>
+    </section>
+  </div>
+
+  <!-- FULLSCREEN CHAT -->
+  <div class="chat" id="chat">
+    <div class="chat-header">
+      <button id="closeChat">←</button>
+      <span>ИИ помощник</span>
+    </div>
+
+    <div class="chat-messages" id="messages"></div>
+
+    <form class="chat-input" id="chatForm">
+      <input type="text" id="userInput" placeholder="Напишите сообщение…" autocomplete="off" />
+      <button type="submit">➤</button>
+    </form>
+  </div>
+
+  <nav>
+    <button class="active">Главная</button>
+    <button>Тренировки</button>
+    <button>Статистика</button>
+    <button>Профиль</button>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>
